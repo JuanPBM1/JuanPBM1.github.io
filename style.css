@@ -25,7 +25,11 @@ strong{
 }
 
 .apresentacao__texto{
+	margin-top:3rem;
+	flex-direction:column;
 	width:40rem;
+	display:flex;
+	gap:1rem;
 }
 
 .apresentacao__texto__titulo{
