@@ -49,14 +49,16 @@ strong{
 }
 
 .apresentacao__texto__botoes__link{
+	display:flex;
 	text-decoration:none;
 	background-color: #00ff03;
 	color:white;
 	border-radius:16px;
-	width:12rem;
+	width:14rem;
 	height:4.5rem;
 	text-align:center;
 	margin:0.5rem;
 	border:2px solid white;
+	align-items:center;
+	justify-content: center;
 }
-
