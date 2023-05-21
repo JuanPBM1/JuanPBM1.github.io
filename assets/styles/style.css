@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*limpa as configurações iniciais de padding e margin de todos os elementos css padrão*/
+*{
+	margin:0;
+	padding:0;
+}
+
+:root{ /*declaração de variáveis css*/
+	--cor-primaria: #8c52ff;
+	--cor-primaria-clara: #a47df1;
+	--cor-secundaria: #00ff03;
+	--cor-terciaria: white;
+
+	--fonte-primaria:'Krona One', sans-serif;
+	--fonte-secundaria:'Montserrat', sans-serif;
+}
+
+/*Configuração de formatação das tags*/
+body {
+	box-sizing:border-box;
+	height:100vh;
+	background-color: var(--cor-primaria);
+	color:var(--cor-terciaria);
+}
+
+footer{
+	background-color:var(--cor-secundaria);
+	display:flex;
+	width:100vw;
+	min-height: 12vh;
+	height:3.125rem;
+	align-items: center;
+	justify-content: center;
+	font-family:var(--fonte-secundaria);
+	font-size: 1.2rem;
+}
+
+strong{
+	color:var(--cor-secundaria);
+}
+
+/*Configuração de formatação das classes*/
+.cabecalho__links{
+	color:var(--cor-secundaria);
+	column-gap: 1.25rem;
+	padding:3rem 0 0 7rem;
+	font-size: 1.2rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	font-family:var(--fonte-primaria);
+}
+
+.cabecalho__links__botoes{
+	display: flex;
+	text-decoration: none; 
+	color:inherit; 
+	margin: 0 0.5rem 2rem 0.02rem;
+}
+
+.cabecalho__links__botoes:hover{
+	color:var(--cor-terciaria);
+}
+
+.apresentacao{
+	display:flex;
+	padding:0.06rem 0.1rem 3rem 0.1rem;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+.apresentacao__texto{
+	flex-direction:column;
+	width:40rem;
+	display:flex;
+	gap:1rem;
+}
+
+.apresentacao__texto__titulo{
+	font-family:var(--fonte-primaria);
+	font-size:2rem;
+}
+
+.apresentacao__texto__paragrafo{
+	font-size:1.2rem;
+	font-family:var(--fonte-secundaria);
+}
+
+.apresentacao__texto__botoes{
+	flex-direction: column;
+	display:flex;
+	justify-content:center;
+	font-family:var(--fonte-secundaria);
+	padding:1rem;
+	font-size:1.5rem;
+	font-weight:600;
+	align-items: center;
+}
+
+.apresentacao__texto__botoes__link{
+	display:flex;
+	text-decoration:none;
+	color:var(--cor-terciaria);
+	border-radius:1rem;
+	width:25rem;
+	height:4.5rem;
+	text-align:center;
+	margin:0.5rem;
+	border:0.125rem solid var(--cor-secundaria);
+	align-items:center;
+	column-gap: 1rem;
+}
+
+.apresentacao__texto__botoes__link:hover{
+	background-color:var(--cor-primaria-clara);
+	padding:0.3rem
+}
